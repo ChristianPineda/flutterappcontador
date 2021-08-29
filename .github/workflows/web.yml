@@ -28,13 +28,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Flutter
-        uses: subosito/flutter-action@v
+        uses: subosito/flutter-action@v1
         with:
           channel: 'stable'
 
       # Runs a set of commands using the runners shell
       - name: Enable Flutter web
-        run: flutter config --enabl-web
+        run: flutter config --enable-web
         
       - name: Install dependencies
         run: flutter packages get
